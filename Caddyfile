@@ -1,0 +1,5 @@
+api.tux.ro {
+    route /v2* {
+        reverse_proxy http://cover-router:3000
+    }
+}
