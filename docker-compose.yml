@@ -1,8 +1,6 @@
 services:
   caddy:
-    container_name: caddy
     build:
-      dockerfile: Dockerfile
       context: .
     restart: unless-stopped
     ports:
@@ -21,4 +19,4 @@ volumes:
 
 networks:
   services:
-    name: services
+    external: true
