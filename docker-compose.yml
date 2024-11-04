@@ -21,5 +21,4 @@ volumes:
 
 networks:
   services:
-    external:
-      name: services
+    name: services
